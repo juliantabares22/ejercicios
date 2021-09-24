@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+        //double raiz = Math.sqrt(36.67); //sqrt permite sacar la raíz cuadrada de un número
+        
+        //double base = 4, exponente = 3;
+        //int resultado = (int)Math.pow(base, exponente); //pow permite elevar una base a una determinada potencia
+        //System.out.println("resultado = " + resultado);
+        
+        //double numero = 4.56;
+        //long resultado = Math.round(numero); //permite redondear un numero
+        //System.out.println("resultado = " + resultado);
+        
+        double numero = Math.random(); //saca numeros aleatorios 
+        System.out.println("numero = " + numero);
