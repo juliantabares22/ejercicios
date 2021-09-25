@@ -1,0 +1,31 @@
+/*
+Ejercicio 2: Hacer un programa que calcule e imprima el salario semanal de
+un empleado a partir de sus horas semanales trabajadas y de su salario por hora
+ */
+package com.mycompany.ejercicio_1;
+
+import java.util.Scanner;
+
+public class Ejercicio_1 {
+
+    public static void main(String args[]) {
+
+        Scanner entrada = new Scanner(System.in);
+        int horasTrabajadas = 0;
+        int precioPorHora = 0;
+        String nombre;
+
+        System.out.println("Digite su nombre: ");
+        nombre = entrada.nextLine();
+
+        System.out.println("Ingrese las horas que trabajó esta semana: ");
+        horasTrabajadas = entrada.nextInt();
+
+        System.out.println("Ingrese el precio por hora: ");
+        precioPorHora = entrada.nextInt();
+
+        System.out.println("Hola " + nombre + ", su salario semanal es: " + horasTrabajadas * precioPorHora);
+
+    }
+
+}

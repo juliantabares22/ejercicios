@@ -1,0 +1,26 @@
+/*
+Ejercicio 3:Guillermo tiene N cantidad de dólares. Luis tiene la mitad
+de lo que posee Guillermo. Juan tiene la mitad de lo que poseen Luis y Guillermo
+Juntos. Hacer un programa que calcule e imprima la cantidad de dinero que tienen 
+entre los tres.
+ */
+package com.mycompany.ejercicio_1;
+
+import java.util.Scanner;
+
+public class Ejercicio_1 {
+
+    public static void main(String args[]) {
+
+        Scanner entrada = new Scanner(System.in);
+        float guillermo, luis, juan, total;
+        System.out.println("Digite la cantidad de dinero que tiene Guillermo: ");
+        guillermo = entrada.nextFloat();
+
+        luis = guillermo / 2; //Luis tiene la mitad de lo de Guillermo
+        juan = (luis + guillermo) / 2;
+        total = guillermo + luis + juan;
+
+        System.out.println("\nLa cantidad de dinero de los tres es: " + total);
+
+    }
