@@ -1,0 +1,38 @@
+/*
+Ejercicio 4: Una compañía de venta de carros usados, paga a su personal de 
+ventas un salario de $1000 mensuales, mas una comision de $150 por cada carro
+vendido, más el 5% del valor de la venta por carro. Cada mes el capturista de la
+empresa ingresa en la computadora los datos pertinentes. Hacer un programa que 
+calcule e imprima el salario mensual de un vendedor dado
+*/
+
+package com.mycompany.ejercicio_1;
+
+import java.util.Scanner;
+
+public class Ejercicio_1 {
+
+    public static void main(String args[]) {
+
+        Scanner entrada = new Scanner(System.in);
+        int salarioMensual = 1000;
+        int comisionCarroVendido = 150;
+        int precioCarro = 0;
+        int carrosVendidos = 0;
+        double pagoTotal = 0;
+        double comision = 0;
+
+        System.out.println("¿Cuántos carros vendió en el mes?");
+        carrosVendidos = entrada.nextInt();
+
+        System.out.println("¿Cuál es el precio del carro?");
+        precioCarro = entrada.nextInt();
+        comision = (precioCarro * 0.05) * carrosVendidos;
+        pagoTotal = (salarioMensual + (comisionCarroVendido * carrosVendidos) + comision);
+
+        System.out.print("Su salario mensual es: " + pagoTotal);
+        System.out.println("\nSu comisión mensual es: " + comision);
+
+    }
+
+}
